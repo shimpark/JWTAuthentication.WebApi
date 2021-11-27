@@ -26,7 +26,7 @@ namespace JWTAuthentication.WebApi
                 var loggerFactory = services.GetRequiredService<ILoggerFactory>();
                 try
                 {
-                    //Seed Default Users
+                    //Seed Default Users (초기값 셋팅하기)
                     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                     await ApplicationDbContextSeed.SeedEssentialsAsync(userManager, roleManager);
