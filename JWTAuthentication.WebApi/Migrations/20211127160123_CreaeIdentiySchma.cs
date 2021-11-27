@@ -2,7 +2,7 @@
 
 namespace JWTAuthentication.WebApi.Migrations
 {
-    public partial class CreateIdentitySchema : Migration
+    public partial class CreaeIdentiySchma : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
